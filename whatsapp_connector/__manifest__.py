@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+
+{
+    'name': 'Real All in One WhatsApp - Product',
+    'summary': 'Send and receive messages. Real ChatRoom. WhatsApp integration. Send Product, WhatsApp Connector. GupShup. Chat-Api. ChatApi. Drag and Drop. ChatRoom 2.0.',
+    'description': 'Send and receive messages. Real ChatRoom. WhatsApp integration. Send Product, WhatsApp Connector. GupShup. Chat-Api. ChatApi. Drag and Drop. ChatRoom 2.0.',
+    'version': '13.0.1',
+    'author': 'AcruxLab',
+    'live_test_url': 'https://chatroom.acruxlab.com/web/signup',
+    'support': 'info@acruxlab.com',
+    # 'price': 0,
+    # 'currency': 'USD',
+    'images': ['static/description/Banner_base.gif'],
+    'website': 'https://acruxlab.com/whatsapp',
+    'license': 'OPL-1',
+    'application': True,
+    'installable': True,
+    'category': 'Sales',
+    'depends': [
+        'board',
+        'bus',
+        'stock',
+        'product',
+        'sales_team'
+    ],
+    'data': [
+        'data/data.xml',
+        'data/cron.xml',
+        'security/security.xml',
+        'security/ir.model.access.csv',
+        'wizard/CustomMessage.xml',
+        'wizard/init_free_test.xml',
+        'views/ir_attachment.xml',
+        'views/default_answer_views.xml',
+        'views/connector_views.xml',
+        'views/conversation_views.xml',
+        'views/message_views.xml',
+        'views/res_users_views.xml',
+        'views/menu.xml',
+        'reports/reports.xml',
+        'reports/dashboard.xml',
+        'views/include_template.xml',
+    ],
+    'qweb': [
+        'static/src/xml/acrux_chat_template.xml',
+    ],
+    'post_load': '',
+    'external_dependencies': {'python': ['phonenumbers', 'mimetypes']},
+
+}

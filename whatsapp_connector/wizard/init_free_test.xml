@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_init_free_test_wizard" model="ir.ui.view">
+        <field name="name">init.free.test.wizard</field>
+        <field name="model">init.free.test.wizard</field>
+        <field name="arch" type="xml">
+            <form >
+                <group>
+                    <field name="connector_id" invisible="1" />
+                    <label for="phones"/>
+                    <div>
+                        <field name="phones" />
+                        <p class="">
+                            Enter numbers which you'll write from (With country code and comma separated).<br/>
+                            Example: 17314831234, 34412401234, 569791234<br/>
+                            All message came from these numbers will be send to your Odoo.
+                            If you write from a different number, message will be lost.<br/>
+                            <b>Think carefully about your numbers, you will not be able to modify them after test begins or use it in another.</b>
+                        </p>
+                    </div>
+                </group>
+                <footer>
+                   <button name="init_test" type="object" string="Init" class="oe_highlight" />
+                </footer>
+           </form>
+        </field>
+    </record>
+
+</odoo>
